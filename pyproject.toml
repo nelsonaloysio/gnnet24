@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gnnet24"
+version = "0.1"
+description = "Deep Community Detection in Attributed Temporal Graphs: Experimental Evaluation of Current Approaches"
+requires-python = ">=3.8"
+readme = {file = "README.md", content-type = "text/markdown"}
+keywords = ["Graph Neural Networks", "Node Clustering", "Temporal Graphs"]
+authors = [
+    {name = "Nelson Aloysio Reis de Almeida Passos", email = "nelson.reis@phd.unipi.it"},
+    {name = "Emanuele Carlini", email = "emanuele.carlini@isti.cnr.it"},
+    {name = "Salvatore Trani", email = "salvatore.trani@isti.cnr.it"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "chardet >=5.2.0",
+    "gensim >=4.3.2",
+    "igraph >=0.11.8",
+    "keras >=2.12.0",
+    "leidenalg >=0.10.2",
+    "munkres >=1.1.4",
+    "networkx >=2.8.8",
+    "networkx-temporal >=1.2",
+    "numpy >=1.23.5",
+    "pandas >=2.0.3",
+    "stellargraph >=1.2.1",
+    "tensorflow >=2.12.0",
+    "torch >=2.1.2",
+    "torch_geometric >=2.5.2",
+    "torch_kmeans >=0.2.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/nelsonaloysio/gnnet24"
+Repository = "https://github.com/nelsonaloysio/gnnet24"
+Issues = "https://github.com/nelsonaloysio/gnnet24/issues"
+
+[project.scripts]
+gnnet24 = "gnnet24.main:main"
+
+[tool.setuptools.packages.find]
+where = ["code"]
+include = ["gnnet24*"]
+exclude = ["gnnet24.tests*"]

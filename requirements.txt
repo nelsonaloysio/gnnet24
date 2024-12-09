@@ -1,0 +1,14 @@
+gensim>=4.3.2
+igraph>=0.11.8
+keras>=2.12.0
+leidenalg>=0.10.2
+munkres>=1.1.4
+networkx>=2.8.8
+networkx-temporal>=1.2
+numpy>=1.23.5
+pandas>=2.0.3
+stellargraph>=1.2.1
+tensorflow>=2.12.0
+torch>=2.1.2
+torch_geometric>=2.5.2
+torch_kmeans>=0.2.0
