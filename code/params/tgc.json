@@ -1,0 +1,20 @@
+{
+    "--batch-size": [
+        1024
+    ],
+    "--emb-size": [
+        16
+    ],
+    "--epoch": [
+        200
+    ],
+    "--hist-len": [
+        1
+    ],
+    "--learning-rate": [
+        0.001
+    ],
+    "--neg-size": [
+        2
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "--context-size": [
+        10
+    ],
+    "--embedding-dim": [
+        128
+    ],
+    "--lr": [
+        0.05
+    ],
+    "--max-epoch": [
+        500
+    ],
+    "--monitor": [
+        "loss"
+    ],
+    "--num-negative-samples": [
+        1
+    ],
+    "--operator": [
+        "<"
+    ],
+    "--p": [
+        1
+    ],
+    "--patience": [
+        0
+    ],
+    "--q": [
+        1
+    ],
+    "--walk-length": [
+        80
+    ],
+    "--walks-per-node": [
+        10
+    ]
+}
