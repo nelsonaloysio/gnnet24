@@ -1,4 +1,4 @@
-from .convert import from_tgc
+from .convert import from_tgc, to_dmon
 from .early_stop import EarlyStop
 from .evaluate import evaluate
 from .grid_search import grid_search

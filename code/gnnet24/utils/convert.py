@@ -64,3 +64,27 @@ def from_tgc(
         data.time -= data.time.min()
 
     return data
+
+
+def to_dmon(data: Data) -> dict:
+    """
+    Converts a PyG data object for compatibility with DMoN.
+
+    :param data: PyG data object.
+    """
+    csr_feature = scipy.sparse.csr_matrix(data.x)
+    csr_adj = to_scipy_sparse_matrix(data.edge_index).tocsr()
+
+    return dict(
+        labels=data.y.numpy(),
+        label_indices=np.arange(data.num_nodes),
+        feature_data=csr_feature.data,
+        feature_indices=csr_feature.indices,
+        feature_indptr=csr_feature.indptr,
+        feature_shape=csr_feature._shape,
+        adj_data=csr_adj.data,
+        adj_indices=csr_adj.indices,
+        adj_indptr=csr_adj.indptr,
+        adj_shape=csr_adj._shape,
+        # time=...,
+    )
