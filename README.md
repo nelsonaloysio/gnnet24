@@ -16,6 +16,7 @@ This repository tree follows the structure below:
 
 **Notes:**
 
+* Additional models are included to reproduce the results reported in the [TADC-SBM](https://github.com/nelsonaloysio/tadc-sbm) paper (IEEE ISCC'25).
 * The TGC model is **not** compatible with the included dataset format in this repo (see [original repository](https://github.com/MGitHubL/Deep-Temporal-Graph-Clustering)).
 
 ## Requirements
@@ -46,9 +47,11 @@ Models receive node-level features, static graphs, snapshot-based temporal graph
 | **Spectral Clustering** | Graph | ✓ | | |
 | **[Leiden](https://doi.org/10.1038/s41598-019-41695-z)** | Graph | ✓ | | |
 | **[Node2Vec](https://doi.org/10.1145/2939672.2939754)** | Graph | ✓ | | |
+| **[Attri2Vec](https://doi.org/10.1007/s10618-019-00650-2)** | Graph | ✓ | | |
 | **[DynNode2Vec](https://doi.org/10.1109/BigData.2018.8621910)** | STG | ✓ | | ✓ |
 | **[tNodeEmbed](https://doi.org/10.5555/3367471.3367683)** | STG | ✓ | | ✓ |
 | **[DAEGC](https://doi.org/10.5555/3367471.3367551)** | Graph | ✓ | ✓ | |
+| **[DMoN](https://www.jmlr.org/papers/v24/20-998.html)** | Graph | ✓ | ✓ | |
 | **[TGC](https://openreview.net/pdf?id=ViNe1fjGME)** | ETG | ✓ | ✓ | ✓ |
 
 ## Datasets
